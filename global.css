@@ -1,0 +1,357 @@
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+strong,
+b {
+  font-weight: bold;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+::selection {
+  background: rgba(255, 90, 30, 0.6);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background: f7f7f7;
+  color: #222;
+  font: normal 62.5% -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+main {
+  text-align: center;
+}
+
+header {
+  padding: 20px;
+  background: #f32;
+  color: white;
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 3.4em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+h2 {
+  font-size: 2.8em;
+  padding: 0 0 20px;
+  font-weight: bold;
+}
+
+li {
+  font-size: 1.7em;
+  padding: 0 0 5px;
+}
+
+p {
+  font-size: 1.7em;
+  padding: 0 0 20px;
+  line-height: 150%;
+}
+
+a {
+  text-decoration: none;
+  color: #f32;
+  transition: all 0.3s;
+}
+
+.button,
+button {
+  display: inline-block;
+  padding: 15px;
+  background: #f32;
+  color: white;
+  border-radius: 5px;
+  border: 0;
+  text-decoration: none;
+  transition: all 0.3s;
+  box-shadow: 0 10px 20px rgba(60, 60, 60, 0.1),
+    0 2px 5px rgba(40, 40, 40, 0.15);
+}
+
+a:active,
+a:focus {
+  box-shadow: 0 2px 8px 2px rgba(228, 127, 18, 0.83);
+}
+
+.button:hover,
+.button:focus {
+  background-color: #d38;
+}
+
+.button_block {
+  display: block;
+}
+
+.container {
+  margin: auto;
+  padding: 0 20px;
+}
+
+
+.box {
+  padding: 20px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 0 0 20px;
+  /* border: 1px solid #f1f1f1; */
+  box-shadow: 0 10px 20px rgba(60, 60, 60, 0.1),
+    0 2px 5px rgba(40, 40, 40, 0.15);
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+
+  .columns {
+    flex-wrap: nowrap;
+  }
+
+  .column {
+    max-width: 50%;
+    min-width: 50%;
+    width: 50%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+
+
+.spinner {
+
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+
+
+}
+
+.spinner {
+  margin: 10px auto;
+  font-size: 10px;
+  position: relative;
+  text-indent: -9999em;
+  border-top: 4px solid #fab;
+  border-right: 4px solid #fab;
+  border-bottom: 4px solid #fab;
+  border-left: 4px solid #ff3322;
+  transform: translateZ(0);
+  animation: load8 1.1s infinite linear;
+
+
+}
+
+@keyframes load8 {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+
+.polling {
+  position: absolute;
+  bottom: 0;
+  transform: scale(0.5);
+  left: 0;
+}
+
+.goback {
+  position: absolute;
+  bottom: 0;
+  transform: scale(0.75);
+  right: 10px;
+}
+
+
+
+form {
+  margin: 0 0 10px;
+
+}
+
+.form_field {
+  margin: 0 0 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  font-size: 1.7em;
+  padding: 0 0 5px;
+}
+
+input,
+textarea {
+  background: #f1f1f1;
+  padding: 15px;
+  font-size: 3em;
+  border: 1px solid #ddd;
+  outline: 0;
+}
+
+
+ul {
+  margin: 0 auto 30px;
+  max-width: 400px;
+}
+
+ul li {
+  padding: 10px;
+  margin: 0 0 10px;
+  font-size: 2em;
+  border-bottom: 1px solid #f1f1f1;
+
+}
+
+.results li:first-child {
+  font-size: 3em;
+}
